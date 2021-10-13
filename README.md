@@ -5,7 +5,7 @@ Processing (TIP)
 1)  Get Started  
 For DLRR,  you can call the "Call_DLRR_single_test_indian_data" function to run the algorithm for Indian_pines dataset. You can also choose to call the "Call_DLRR_single_test_paviau_data"
 or "Call_DLRR_single_test_salinas_data" functions for other two datasets. After above procedure, you can see the on-screen instructions for showing the result, such as 
-“the performance for this time: OA=*,AA=*,Kappa=*".  
+“the performance for this time: OA=\*,AA=\*,Kappa=\*".  
 
 2). Details  
 

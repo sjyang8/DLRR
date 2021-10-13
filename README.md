@@ -31,7 +31,7 @@ CTest 		--------	The number of samples on each class for testing data
 loc_train		--------	The positions of training samples  
 loc_test		--------	The positions of testing samples  
 
-Dependancies:
+Dependancies:  
 1)Entropy Rate Superpixel Segmentation  
 2)MATLAB toolboxes on my PC that you may need:  
 -----------Deep Learning Toolbox  

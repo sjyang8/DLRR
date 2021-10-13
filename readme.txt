@@ -20,16 +20,25 @@ for example, the result file "Indian_pines_train1_iters3_result_svm.mat" saves t
 variables that stored in the result file.
 
 Variable description:
-accuracy_SVM1 ---------OA on original feature
-accuracy_SVM2 ---------OA on denosing feature by DLRR
-Kappa_SVM1 ------------Kappa on original feature
-Kappa_SVM2-------------Kappa on denosing feature by DLRR
-
-
+accuracy_SVM1 	-------- 	OA on original feature
+accuracy_SVM2  	-------- 	OA on denoising feature by DLRR
+Kappa_SVM1     	--------	Kappa on original feature
+Kappa_SVM2    	--------	Kappa on denoising feature by DLRR
+TPR_SVM1         	--------	Accuracy of each class on original feature
+TPR_SVM2  	--------    Accuracy of each class on denoising feature by DLRR
+Predict_SVM1	--------	The prediction on original feature
+Predict_SVM2	--------	The prediction on denoising feature by DLRR
+para		--------	The parameters
+ori_num_pixel	--------    The original number of superpixels 
+num_superpixel 	--------	The updated number of superpixels by DLRR
+CTrain		--------	The number of samples on each class for training data
+CTest 		--------	The number of samples on each class for testing data
+loc_train		--------	The positions of training samples
+loc_test		--------	The positions of testing samples
 
 Dependancies:
 1)Entropy Rate Superpixel Segmentation
-2)MATLAB toolboxes on our PC that you may need:
+2)MATLAB toolboxes on my PC that you may need:
 -----------Deep Learning Toolbox
 -----------Image Processing Toolbox
 -----------Mapping Toolbox
@@ -38,8 +47,8 @@ Dependancies:
 -----------Symbolic Math Toolbox
 
 Acknowledgement
-1) Thanks to the paper "SuperPCA: A Superpixelwise PCA Approach for Unsupervised Feature Extraction of Hyperspectral Imagery", we refer some codes of it that saves in folder "common".
-2) Thanks to the paper "Simultaneous spatial and spectral low-rank representation of hyperspectral images for classification", we refer the classification codes of it that saves in folder "classification_code".
+1) Thanks to the paper "SuperPCA: A Superpixelwise PCA Approach for Unsupervised Feature Extraction of Hyperspectral Imagery", we refer some codes of it that saved in the folder "common".
+2) Thanks to the paper "Simultaneous spatial and spectral low-rank representation of hyperspectral images for classification", we refer the classification codes of it that saved in the folder "classification_code".
 
 ATTN: 
 - This package is free for academic usage. You can run it at your own risk. 

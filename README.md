@@ -7,7 +7,7 @@ For DLRR,  you can call the "Call_DLRR_single_test_indian_data" function to run 
 
 2). Details  
 
-For DLRR,  the "Call_DLRR_single_test_indian_data" will automatically create a new folder for saving the detailed results,  i\.e\. "Indian_pines_results/Indian_pinesper_class0.05each_iter/"\. In such folder, for example, the result file "Indian_pines_train1_iters3_result_svm.mat" saves the results for 3rd learning iteration of 1th run\.  In the following, we also show the detailed description for the variables that stored in the result file\.  
+For DLRR,  the "Call_DLRR_single_test_indian_data" will automatically create a new folder for saving the detailed results,  i\.e\., "Indian_pines_results/Indian_pinesper_class0.05each_iter/"\. In such folder, for example, the result file "Indian_pines_train1_iters3_result_svm.mat" saves the results for 3rd learning iteration of 1th run\.  In the following, we also show the detailed description for the variables that stored in the result file\.  
 
 Variable description:  
 accuracy_SVM1 	-------- 	OA on original feature  

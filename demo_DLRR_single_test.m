@@ -100,7 +100,7 @@ for iter=2:(max_iters+1)%% 1~T_max iterations in paper
     para.beta=beta; %
     para.rho=rho;
     para.maxtau=maxtau;
-	para.DEBUG=1;
+	para.DEBUG=0;
     S=[];E=[];
     [S,E,L,Err,X_i,conv_iter,isfinite_flag,obj] = local_global_low_rank_new_lamda_seg(X',sub_cluster_n,para,num_Pixel);
     

@@ -10,9 +10,9 @@ max_segs=3; 			    % parameter for M
 seg_ratio_thresh_hold=[0.2];% parameter of \delta
 beta=1;lambda_uni=0.01;     % parameter for \beta and \lambda
 max_iters=3;
-random_times=2;
+random_times=10;
 
-Use_sample_train=0;         %% if Use_sample_train=0; then run 10 times randomly;
+Use_sample_train=1;         %% if Use_sample_train=0; then run 10 times randomly;
                             %% when Use_sample_train=1; run 1 time that using the sample train index
 
 %% Main loop

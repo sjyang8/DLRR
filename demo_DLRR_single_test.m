@@ -82,7 +82,7 @@ end
 
 
 %% save path setting
-save_path=[img_name '_results_' num2str(ori_num_Pixel) 'lambda' num2str(lambda_uni) 'beta' num2str(beta) '/' img_name 'per_class' num2str(per_ratio) 'delta' num2str(seg_ratio_thresh_hold*10) 'M' num2str(max_segs) 'each_iter' '/'  ];
+save_path=[img_name '_results/' img_name 'per_class' num2str(per_ratio) 'each_iter' '/'  ];
 if ~exist(save_path,'dir')
     mkdir(save_path);
 end
@@ -117,10 +117,10 @@ for iter=2:(max_iters+1)%% 1~T_max iterations in paper
     
     [accracy_SVM1,TPR_SVM1,Kappa_SVM1,accracy_SVM2,TPR_SVM2,Kappa_SVM2,Predict_SVM1,Predict_SVM2] = my_Classification_V2_single_iter(R,S_spe_m,CTrain,CTest,loc_train,loc_test);
     if para.DEBUG==0
-		save([save_path img_name 'delta' num2str(seg_ratio_thresh_hold) 'M' num2str(max_segs) 'lambda' num2str(lambda_uni) 'beta' num2str(beta) 'per_C' num2str(per_ratio) 'train' num2str(ith_iter) 'iters' num2str(iter-1) '_result_svm.mat'],...
+		save([save_path img_name 'train' num2str(ith_iter) 'iters' num2str(iter-1) '_result_svm.mat'],...
 			'CTrain','CTest','loc_train','loc_test', 'para','ori_num_Pixel','num_Pixel', 'accracy_SVM1','TPR_SVM1','Kappa_SVM1','accracy_SVM2','TPR_SVM2','Kappa_SVM2','Predict_SVM1','Predict_SVM2');
     else
-		save([save_path img_name 'delta' num2str(seg_ratio_thresh_hold) 'M' num2str(max_segs) 'lambda' num2str(lambda_uni) 'beta' num2str(beta) 'per_C' num2str(per_ratio) 'train' num2str(ith_iter) 'iters' num2str(iter-1) '_result_svm.mat'],...
+		save([save_path img_name 'train' num2str(ith_iter) 'iters' num2str(iter-1) '_result_svm.mat'],...
 			'CTrain','CTest','loc_train','loc_test', 'para','ori_num_Pixel','num_Pixel', 'accracy_SVM1','TPR_SVM1','Kappa_SVM1','accracy_SVM2','TPR_SVM2','Kappa_SVM2','Predict_SVM1','Predict_SVM2','obj');
 	end
     %% step2-- Classification-guided superpixel segmentation 

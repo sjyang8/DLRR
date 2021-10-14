@@ -1,6 +1,6 @@
 # DLRR
 The code is for the work:  
-[1] S.-J. Yang J.-H. Hou , Y.-H. Jia, S.-H. Mei, Q. Du. Superpixel Induced Discriminative Low rank Representation of Hyperspectral Images. Oct 2021, In: IEEE Transactions on Image 
+[1] S.-J. Yang J.-H. Hou , Y.-H. Jia, S.-H. Mei, Q. Du.  Superpixel-guided Discriminative Low-rank Representation of Hyperspectral Images for Classification. Oct 2021, In: IEEE Transactions on Image 
 Processing (TIP)  
 
 ATTN:  
